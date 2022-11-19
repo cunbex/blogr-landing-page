@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 75vh;
+  background: url("../images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to right, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
+  background-repeat: no-repeat;
+  background-size: 200vw 350vh;
+  background-position: -20vw -150vh;
+  border-radius: 0 0 0 100px;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 30vh;
+  height: 50vh;
+  gap: 15vh;
+  padding-top: 7vh;
+}
+.nav {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  color: white;
+  font-size: 42px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+.links {
+  height: 130%;
+  display: flex;
+  align-items: center;
+  gap: 15%;
+  margin-right: auto;
+  margin-left: 5%;
+}
+.links a {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: hsla(240, 2%, 90%, 0.8);
+  text-decoration: none;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.nav-buttons button:nth-child(2) {
+  padding: 14px 39px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  color: hsla(353, 100%, 62%, 1);
+  border-style: none;
+  border-radius: 50px;
+}
+.nav-buttons button:nth-child(1) {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  font-weight: 700;
+  color: hsla(240, 2%, 90%, 0.8);
+  background-color: transparent;
+}
+.hero {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.hero h1 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 60px;
+}
+.hero p {
+  font-family: "Overpass", sans-serif;
+  color: hsla(240, 2%, 90%, 0.8);
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+.hero-buttons button:nth-child(1) {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  color: hsla(353, 100%, 62%, 1);
+  border-style: none;
+  border-radius: 50px;
+}
+.hero-buttons button:nth-child(2) {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+}
+/*----------------------------------------------- MAIN TOP ----------------------------------------------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.top {
+  background: url(../images/illustration-editor-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  background-position: 57vw 0vh;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 105vh;
+  margin: 5% 0 0 0;
+}
+.top > h1 {
+  position: absolute;
+  top: 8%;
+  left: 49%;
+  transform: translate(-49%, 0);
+  color: #183653;
+  font-weight: 600;
+  font-family: "Overpass", sans-serif;
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 60px;
+  margin: 0 0 0 10%;
+}
+
+.tlc1,
+.tlc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.tlc1 h1,
+.tlc2 h1 {
+  font-size: 26px;
+  color: #183653;
+  font-weight: 600;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0.9px;
+}
+.top-content .tlc1 p,
+.tlc2 p {
+  font-family: "Overpass", sans-serif;
+  line-height: 28px;
+  color: hsl(207, 13%, 34%);
+  word-spacing: 1px;
+}
+
+/*--------------------------------------------------------Middle-----------------------------------------*/
+
+.middle {
+  background: url("../images/bg-pattern-circles.svg"),
+    linear-gradient(to left, #3b3f5c, #2e3043);
+  background-repeat: no-repeat;
+  background-position: -55% 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  border-radius: 0 95px 0 95px;
+}
+.middle-left {
+  padding: 60px 0 20px 0;
+}
+.middle-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+  margin-right: 5%;
+}
+.middle-right h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 38px;
+}
+.middle-right p {
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: white;
+  line-height: 28px;
+  padding: 0 50px 0 0;
+}
+/*-------------------------------------------------- bottom ----------------------------*/
+.bottom {
+  background: url(../images/illustration-laptop-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 68% 90%;
+  background-position: -20vw 0vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 110vh;
+  margin-top: 5%;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 35%;
+  gap: 60px;
+  margin: 0 10% 6% 10%;
+}
+
+.brc1,
+.brc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.brc1 h1,
+.brc2 h1 {
+  font-size: 26px;
+  color: #183653;
+  font-weight: 600;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0.9px;
+}
+.brc1 p,
+.brc2 p {
+  font-family: "Overpass", sans-serif;
+  line-height: 28px;
+  color: hsl(207, 13%, 34%);
+  word-spacing: 1px;
+}
+/*----------------------------------------------------Footer --------------------------------------*/
+footer {
+  background-color: #24252d;
+  width: 100%;
+  height: 45vh;
+  border-radius: 0 100px 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 180px;
+  padding: 60px 100px 0 150px;
+}
+.genra {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+.genra p:first-child {
+  padding: 20px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+}
+.genra a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #c2c2ca;
+  font-size: 15px;
+}
+/*
+/*
+/*
