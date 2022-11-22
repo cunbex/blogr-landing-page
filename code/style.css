@@ -9,11 +9,9 @@
 header {
   height: 75vh;
   background: url("../images/bg-pattern-intro-desktop.svg"),
-    linear-gradient(to right, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
-  background-size: 200vw 350vh;
-  background-position: -20vw -150vh;
-  border-radius: 0 0 0 100px;
+  background-position: 21% 52%;
 }
 .header-container {
   display: flex;
@@ -295,6 +293,3 @@ footer {
   color: #c2c2ca;
   font-size: 15px;
 }
-/*
-/*
-/*
